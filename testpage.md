@@ -1,8 +1,9 @@
 ---
 layout: home
-title: "Testpage-Home"
+title: "Testpage 2"
 sub_title: "Eine kleine Testseite"
 image: "/images/webdev.jpg"
+permalink: "/testpage2/"
 ---
 
 Content Lorem Ipsum
