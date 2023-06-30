@@ -10,3 +10,7 @@
     -webkit-text-fill-color: transparent;
     display: initial;
 }
+
+footer.footer {
+    background-color: WhiteSmoke;
+}
