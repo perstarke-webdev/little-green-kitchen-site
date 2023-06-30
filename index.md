@@ -1,8 +1,9 @@
 ---
 layout: home
-title: "Testpage-Home"
-sub_title: "Eine kleine Testseite"
-image: "/images/webdev.jpg"
+title: "Churros Don Juan"
+sub_title: "Churros im Ruhrpark Bochum"
+image: "/images/header.webp"
 ---
 
-Content Lorem Ipsum
+Churros Don Juan. Mit aller Sorgfalt nach einem handwerklichen Rezept hergestellt, das seit 1945 vererbt wurde. Frischer Teig, der damals auf handwerkliche Weise hergestellt wurde. Wir verwenden die besten Zutaten, um eine einzigartige und 100% vegane Textur zu erzielen.
+Churros Don Juan ist Erfahrung, Engagement und Liebe, damit Sie in jedem Churro ein einzigartiges Erlebnis genießen können.
