@@ -18,3 +18,9 @@ footer.footer {
 .bold {
     font-weight: bold;
 }
+
+hr.sep {
+    border-top: 2px solid WhiteSmoke;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
