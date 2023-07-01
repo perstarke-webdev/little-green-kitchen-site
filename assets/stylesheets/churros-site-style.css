@@ -14,3 +14,7 @@
 footer.footer {
     background-color: WhiteSmoke;
 }
+
+.bold {
+    font-weight: bold;
+}
