@@ -73,4 +73,4 @@ function toggleClassSearch() {
   setTimeout(function () {
     document.querySelector('.search-content input').focus();
   }, 400);
-}  
+}
