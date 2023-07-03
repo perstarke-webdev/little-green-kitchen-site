@@ -85,3 +85,27 @@ hr.rezension-sep {
     margin-right: 20px;
 }
 
+.btn-custom {
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #00838a;
+  border: 1px solid #006c72;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.btn-custom:hover {
+  background-color: #006c72;
+}
+
+.btn-link {
+  display: inline-block;
+}
+
+
