@@ -24,3 +24,57 @@ hr.sep {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+h3 {
+    color: #393e46;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1 0 30%; /* Anpassen der Breite der Boxen */
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+
+.stars {
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+
+.stars i {
+    color: gold;
+}
+
+.stars-text {
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.rezension-box {
+    border: 2px solid #e0f0f0;
+    border-radius: 3px;
+}
+
+.rezension-text {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+
+
