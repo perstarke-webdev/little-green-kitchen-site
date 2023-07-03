@@ -111,3 +111,17 @@ hr.rezension-sep {
 .btn-link {
   display: inline-block;
 }
+
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* Hier kannst du das Seitenverhältnis der Karte einstellen (Höhe/Breite * 100) */
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
