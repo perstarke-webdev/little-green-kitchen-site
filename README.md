@@ -1,6 +1,6 @@
 # Churros Don Juan site
 
-Repository for the website for churros Don uan
+Repository for the website for Churros Don Juan
 
 ## Credits
 
