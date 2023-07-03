@@ -69,6 +69,7 @@ h3 {
 .rezension-box {
     border: 2px solid #e0f0f0;
     border-radius: 3px;
+    background-color: WhiteSmoke;
 }
 
 .rezension-text {
@@ -76,5 +77,11 @@ h3 {
     font-size: 0.8em;
 }
 
-
+hr.rezension-sep {
+    border-top: 2px solid #00838a;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
