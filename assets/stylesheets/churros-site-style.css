@@ -81,6 +81,10 @@ h3 {
     font-size: 0.8em;
 }
 
+.italic {
+    font-style: italic;
+}
+
 hr.rezension-sep {
     border-top: 2px solid #00838a;
     margin-top: 15px;
