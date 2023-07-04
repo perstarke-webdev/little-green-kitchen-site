@@ -75,3 +75,29 @@ permalink: "/oeffnungszeiten_anfahrt/"
 </div>
 
 
+<hr class="sep">
+
+<!-- Cookie Consent-Banner -->
+<div id="cookie-banner">
+    Diese Webseite verwendet Google Maps, einen Dienst von Google LLC, um interaktive Karten anzuzeigen. <br>
+    Dieser Dienst verwendet Cookies (technisch notwendige Cookies, Analyse-Cookies und Marketing-Cookies). <br>
+    Mehr Infos findest du in der
+    <a href=https://policies.google.com/privacy?hl=de"
+       target="_blank" rel="noopener noreferrer nofollow">
+        Datenschutzerklärung von Google.</a> <br>
+    Bitte bestätige, dass du damit einverstanden bist.
+    <br><br>
+    <button class="btn-custom" id="cookie-consent-btn">Einverstanden</button>
+</div>
+
+<!-- JavaScript-Code für den Cookie Consent-Banner -->
+<script>
+    // Funktion zum Ausblenden des Banners
+    function setCookieConsent() {
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    // Event Listener für den Einverstanden-Button
+    document.getElementById('cookie-consent-btn').addEventListener('click', setCookieConsent);
+</script>
+
