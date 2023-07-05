@@ -1,6 +1,6 @@
-# Churros Don Juan site
+# Little Green Kitchen site
 
-Repository for the website for Churros Don Juan
+Repository for the website for Little Green Kitchen
 
 ## Credits
 
