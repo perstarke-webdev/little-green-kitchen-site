@@ -1,16 +1,11 @@
-<footer id="footer" class="site-footer footer">
+<footer id="footer" class="site-footer">
   <div class="inner">
-    <br>
-    <a href="/imprint"
-           rel="noopener noreferrer nofollow"
-           target="_blank"><i class="fas fa-fw fa-gavel" style="color:#04838a;"></i> Impressum & Datenschutz</a>
-    <br>
-    <br>
-      &copy; {{ site.time | date: '%Y' }} {{ site.title }}.
-      Created by
-      <a rel="noopener noreferrer nofollow" target="_blank"href="https://perstarke-webdev.de/">
-        Per Starke Web Development</a>
-    <br>
-    <br>
+    <div class="copyright">
+      {% if site.copyright %}
+        {{ site.copyright | markdownify }}
+      {% else %}
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}.</p>
+      {% endif %}
+    </div>
   </div>
 </footer>
