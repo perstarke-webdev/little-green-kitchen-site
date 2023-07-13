@@ -106,8 +106,8 @@ hr.rezension-sep {
   color: #fff;
   text-align: center;
   vertical-align: middle;
-  background-color: #00838a;
-  border: 1px solid #006c72;
+  background-color: #008a1c; /* Akzentfarbe */
+  border: 1px solid #006634; /* Dunklere Umrandung */
   border-radius: 5px;
   padding: 8px 16px;
   font-size: 14px;
@@ -116,7 +116,7 @@ hr.rezension-sep {
 }
 
 .btn-custom:hover {
-  background-color: #006c72;
+  background-color: #006c34; /* Dunklerer Grünton beim Hover */
 }
 
 .btn-link {
