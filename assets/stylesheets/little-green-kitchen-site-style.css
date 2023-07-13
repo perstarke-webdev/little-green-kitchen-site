@@ -71,7 +71,7 @@ h3 {
 }
 
 .rezension-box {
-    border: 2px solid #e0f0f0;
+    border: 2px solid #d9f6de;
     border-radius: 3px;
     background-color: WhiteSmoke;
 }
@@ -93,7 +93,7 @@ p.aktuell-datum {
 }
 
 hr.rezension-sep {
-    border-top: 2px solid #00838a;
+    border-top: 2px solid #008a1c;
     margin-top: 15px;
     margin-bottom: 30px;
     margin-left: 20px;
