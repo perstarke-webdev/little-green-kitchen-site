@@ -1,7 +1,13 @@
 .colored-box {
-    padding: 3px;
+    padding: 8px;
     border-radius: 3px;
     background-color: #99d0a4;
+}
+
+.colored-border-box {
+    padding: 8px;
+    border-radius: 3px;
+    border: 2px solid #99d0a4;
 }
 
 .padding-box {

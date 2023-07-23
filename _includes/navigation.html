@@ -9,7 +9,11 @@
       {% if my_page.title %}
         <li class="menu-item">
           <a href="{{ my_page.url | relative_url }}" itemprop="url">
+            {% if my_page.url == "/" %}
+            <span itemprop="name">Home</span>
+            {% else %}
             <span itemprop="name">{{ my_page.title | escape }}</span>
+            {% endif %}
           </a>
         </li>
       {% endif %}

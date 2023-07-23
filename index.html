@@ -1,3 +1,9 @@
+---
+title: "Home"
+permalink: "/"
+---
+
+
 <!DOCTYPE html>
 <!--
     Basically Basic Jekyll Theme 1.4.5
@@ -5,7 +11,7 @@
     Free for personal and commercial use under the MIT license
     https://github.com/mmistakes/jekyll-theme-basically-basic/blob/master/LICENSE
 -->
-<html lang="de" class="no-js">
+<html lang="de" "no-js">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -85,94 +91,14 @@
 
 <div id="sidebar" class="sidebar">
     <div class="inner">
-        <nav id="primary-nav" class="site-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" aria-label="Main navigation">
-            <ul id="menu-main-navigation" class="menu">
-                <!-- site.pages links -->
-
-
-
-
-
-
-                <li class="menu-item">
-                    <a href="/" itemprop="url">
-                        <span itemprop="name">Little Green Kitchen</span>
-                    </a>
-                </li>
-
-
-
-
-                <li class="menu-item">
-                    <a href="/oeffnungszeiten_anfahrt/" itemprop="url">
-                        <span itemprop="name">Öffnungszeiten &amp; Anfahrt</span>
-                    </a>
-                </li>
-
-
-
-
-                <li class="menu-item">
-                    <a href="/aktuelle_informationen/" itemprop="url">
-                        <span itemprop="name">Aktuelle Informationen</span>
-                    </a>
-                </li>
-
-
-
-
-                <li class="menu-item">
-                    <a href="/galerie/" itemprop="url">
-                        <span itemprop="name">Galerie</span>
-                    </a>
-                </li>
-
-
-                <li class="menu-item">
-                    <a href="/images/ugly-404.webp" itemprop="url" target="_blank" rel="noopener noreferrer nofollow">
-                        <span itemprop="name"> Speisekarte </span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-        <ul class="contact-list">
-
-            <li>
-                <a href="https://www.instagram.com/littlegreenkitchen.cgn/"
-                   rel="noopener noreferrer nofollow"
-                   target="_blank"><i class="fab fa-fw fa-instagram instagram"></i> Instagram
-                </a>
-            </li>
-
-            <li>
-                <a href="tel:0176-76861049"><i class="fa-solid fa-fw fa-phone"></i> Telefon
-                </a>
-            </li>
-
-        </ul>
-
+        {% include navigation.html %}
+        {% include contact-list.html %}
     </div>
 </div>
 
 <div class="canvas">
     <div class="wrapper">
-
-
-        <header id="masthead">
-            <div class="inner">
-                <div class="title-area">
-
-                    <h1 class="site-title">
-                        <a href="/">
-                            <img src="/images/churros_don_juan_logo.webp" alt="" class="site-logo">
-                            <span>Little Green Kitchen</span>
-                        </a>
-                    </h1>
-
-                </div>
-            </div>
-        </header>
+        {% include masthead.html %}
 
         <div class="initial-content">
             <header class="intro">
@@ -269,10 +195,14 @@
                     </div>
                         <br><br>
 
-                        <img class="max200" src="/images/Logos/LGK_Logo_18.png"><br>
-                        Klingelpütz 10, 50670 Köln<br>
-                        Montag bis Freitag, 10.00 – 15.00 Uhr
-
+                        <div class="colored-border-box">
+                            <img class="max200" src="/images/Logos/LGK_Logo_18.png"><br><br>
+                            Klingelpütz 10, 50670 Köln<br>
+                            Montag bis Freitag, 10.00 – 15.00 Uhr<br><br>
+                            Whatsapp: <a href="tel:0176-76812647">0176 76812647</a><br>
+                            Mail: <a href="mailto:hey@littlegreenkitchen.de">hey@littlegreenkitchen.de</a><br><br>
+                            <a target="_blank" rel="noopener noreferrer nofollow" href="https://www.lieferando.de/speisekarte/little-green-kitchen"> Bestelle bei Lieferando<i style="color:orange" class="fa-solid fa-truck"></i> </a>
+                        </div>
                         <hr class="sep">
 
                         <h3> Kundenbewertungen </h3>
@@ -378,30 +308,8 @@
     </div>
 </div>
 
-<footer id="footer" class="site-footer footer">
-    <div class="inner">
-        <br>
-        <a href="/imprint"
-           rel="noopener noreferrer nofollow"
-           target="_blank"><i class="fas fa-fw fa-gavel" style="color:#008a1c;"></i> Impressum & Datenschutz</a>
-        <br>
-        <br>
-        &copy; 2023 Little Green Kitchen.
-        Created by
-        <a rel="noopener noreferrer nofollow" target="_blank"href="https://perstarke-webdev.de/">
-            Per Starke Web Development</a>
-        <br>
-        <br>
-    </div>
-</footer>
-
-<script async src="/assets/javascripts/main.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-
-<script src="https://kit.fontawesome.com/d0c98d3c82.js" crossorigin="anonymous"></script>
-
+{% include footer.html %}
+{% include scripts.html %}
 
 </body>
 
