@@ -50,6 +50,7 @@ google_fonts:
 
 navigation_pages:
   - index.html
+  - 04_menue.html
   - 01_oeffnungszeiten_anfahrt.html
   - 02_aktuelle_infos.html
   - 03_galerie.html
