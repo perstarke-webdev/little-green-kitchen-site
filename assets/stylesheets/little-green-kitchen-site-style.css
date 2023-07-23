@@ -143,3 +143,10 @@ hr.rezension-sep {
     padding: 10px;
     border-radius: 5px;
 }
+
+
+/* Image-sizes */
+img.max200 {
+    width:100%;
+    max-width:200px;
+}
