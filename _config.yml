@@ -19,7 +19,7 @@ email:
 description:
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-logo: "/images/churros_don_juan_logo.webp"
+logo: "/images/logos/LGK_Logo_insta.jpg"
 search: # true, false (default)
 search_full_content: false # true, false (default)
 search_provider: # lunr (default), algolia
