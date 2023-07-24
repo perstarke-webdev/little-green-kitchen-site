@@ -109,6 +109,7 @@ permalink: "/galerie/"
           const thumbnailImg = document.createElement('img');
           thumbnailImg.src = thumbnailSrc;
           thumbnailImg.alt = `Bild ${i + 1}`;
+          thumbnailImg.loading = 'lazy';
 
           thumbnailLink.appendChild(thumbnailImg);
           galleryItem.appendChild(thumbnailLink);
