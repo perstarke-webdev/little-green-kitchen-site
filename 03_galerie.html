@@ -10,23 +10,59 @@ permalink: "/galerie/"
     <!-- JavaScript füllt die Bilder hier ein -->
 </div>
 
+<ul class="pagination">
+    <!-- JavaScript füllt die Seitennummern hier ein -->
+</ul>
 <style>
     .gallery-container {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       gap: 10px; /* Standard-Abstand zwischen den Bildern */
     }
+
     .gallery-item {
       width: 200px; /* Quadratische Breite */
       height: 200px; /* Quadratische Höhe */
       overflow: hidden;
     }
+
     .gallery-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       cursor: pointer;
     }
+
+    .pagination {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .pagination button {
+      margin: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      border: none;
+      background-color: #f2f2f2;
+      transition: background-color 0.3s ease;
+    }
+
+    .pagination button:hover {
+      background-color: #e0e0e0;
+    }
+
+    .pagination button.active {
+      background-color: #6b9371;
+      color: white;
+    }
+
+    .pagination button.active:hover {
+      background-color: #568b64;
+    }
+
 
     @media screen and (max-width: 650px) {
       /* Reduziere die Anzahl der Spalten in der mobilen Ansicht */
@@ -47,31 +83,71 @@ permalink: "/galerie/"
     // JavaScript-Code zum Laden der Bilder in die Galerie
     window.addEventListener('DOMContentLoaded', function () {
       const galleryContainer = document.querySelector('.gallery-container');
-
-      // Anzahl der Bilder in der Galerie
       const numImages = 41;
+      const imagesPerPage = 12;
+      const numPages = Math.ceil(numImages / imagesPerPage);
+      let currentPage = 1;
 
-      // Dynamisch Bilder hinzufügen
-      for (let i = 1; i <= numImages; i++) {
-        const thumbnailSrc = `/images/gallery/${i}.webp`;
-        const originalSrc = `/images/gallery/${i}.webp`;
+      // Funktion zum Anzeigen der aktuellen Seite
+      function showPage(pageNumber) {
+        const startIndex = (pageNumber - 1) * imagesPerPage;
+        const endIndex = Math.min(startIndex + imagesPerPage, numImages);
 
-        const galleryItem = document.createElement('div');
-        galleryItem.classList.add('gallery-item');
+        galleryContainer.innerHTML = ''; // Galerie leeren
 
-        const thumbnailLink = document.createElement('a');
-        thumbnailLink.href = originalSrc;
-        thumbnailLink.setAttribute('data-lightbox', 'gallery');
+        for (let i = startIndex; i < endIndex; i++) {
+          const thumbnailSrc = `/images/gallery/${i + 1}.webp`;
+          const originalSrc = `/images/gallery/${i + 1}.webp`;
 
-        const thumbnailImg = document.createElement('img');
-        thumbnailImg.src = thumbnailSrc;
-        thumbnailImg.alt = `Bild ${i}`;
+          const galleryItem = document.createElement('div');
+          galleryItem.classList.add('gallery-item');
 
-        thumbnailLink.appendChild(thumbnailImg);
-        galleryItem.appendChild(thumbnailLink);
+          const thumbnailLink = document.createElement('a');
+          thumbnailLink.href = originalSrc;
+          thumbnailLink.setAttribute('data-lightbox', 'gallery');
 
-        galleryContainer.appendChild(galleryItem);
+          const thumbnailImg = document.createElement('img');
+          thumbnailImg.src = thumbnailSrc;
+          thumbnailImg.alt = `Bild ${i + 1}`;
+
+          thumbnailLink.appendChild(thumbnailImg);
+          galleryItem.appendChild(thumbnailLink);
+
+          galleryContainer.appendChild(galleryItem);
+        }
       }
+
+      // Funktion zum Erstellen der Seitennummern
+      function createPagination() {
+        const paginationContainer = document.querySelector('.pagination');
+        paginationContainer.innerHTML = '';
+
+        for (let i = 1; i <= numPages; i++) {
+          const pageNumber = i;
+          const pageButton = document.createElement('button');
+          pageButton.textContent = pageNumber;
+
+          pageButton.addEventListener('click', function () {
+            currentPage = pageNumber;
+            showPage(currentPage);
+
+            // Aktiviere den ausgewählten Seitennummer-Button
+            const allButtons = document.querySelectorAll('.pagination button');
+            allButtons.forEach(button => {
+              button.classList.remove('active');
+            });
+            this.classList.add('active');
+          });
+
+          paginationContainer.appendChild(pageButton);
+        }
+
+        // Standardmäßig erste Seite anzeigen
+        showPage(currentPage);
+        const firstButton = document.querySelector('.pagination button');
+        firstButton.classList.add('active');
+      }
+
+      createPagination();
     });
   </script>
-
