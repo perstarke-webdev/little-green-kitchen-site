@@ -6,33 +6,72 @@ image: "/images/headers/header2.webp"
 permalink: "/galerie/"
 ---
 
-<figure class="third">
-    <a href="/images/gallery/1.webp" data-lightbox="gallery">
-        <img src="/images/gallery/1.webp" alt="">
-    </a>
-    <a href="/images/gallery/2.webp" data-lightbox="gallery">
-        <img src="/images/gallery/2.webp" alt="">
-    </a>
-    <a href="/images/gallery/3.webp" data-lightbox="gallery">
-        <img src="/images/gallery/3.webp" alt="">
-    </a>
-    <a href="/images/gallery/4.webp" data-lightbox="gallery">
-        <img src="/images/gallery/4.webp" alt="">
-    </a>
-    <a href="/images/gallery/5.webp" data-lightbox="gallery">
-        <img src="/images/gallery/5.webp" alt="">
-    </a>
-    <a href="/images/gallery/6.webp" data-lightbox="gallery">
-        <img src="/images/gallery/6.webp" alt="">
-    </a>
-    <a href="/images/gallery/7.webp" data-lightbox="gallery">
-        <img src="/images/gallery/7.webp" alt="">
-    </a>
-    <a href="/images/gallery/8.webp" data-lightbox="gallery">
-        <img src="/images/gallery/8.webp" alt="">
-    </a>
-    <a href="/images/gallery/9.webp" data-lightbox="gallery">
-        <img src="/images/gallery/9.webp" alt="">
-    </a>
-</figure>
+<div class="gallery-container">
+    <!-- JavaScript füllt die Bilder hier ein -->
+</div>
+
+<style>
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px; /* Standard-Abstand zwischen den Bildern */
+    }
+    .gallery-item {
+      width: 200px; /* Quadratische Breite */
+      height: 200px; /* Quadratische Höhe */
+      overflow: hidden;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 650px) {
+      /* Reduziere die Anzahl der Spalten in der mobilen Ansicht */
+      .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Kleineres Quadrat in der Vorschau */
+        gap: 5px; /* Abstand zwischen den Zeilen und den Spalten in der mobilen Ansicht */
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
+      }
+      .gallery-item {
+        width: 150px; /* Kleineres Quadrat in der Vorschau */
+        height: 150px; /* Kleineres Quadrat in der Vorschau */
+      }
+    }
+  </style>
+
+<script>
+    // JavaScript-Code zum Laden der Bilder in die Galerie
+    window.addEventListener('DOMContentLoaded', function () {
+      const galleryContainer = document.querySelector('.gallery-container');
+
+      // Anzahl der Bilder in der Galerie
+      const numImages = 41;
+
+      // Dynamisch Bilder hinzufügen
+      for (let i = 1; i <= numImages; i++) {
+        const thumbnailSrc = `/images/gallery/${i}.webp`;
+        const originalSrc = `/images/gallery/${i}.webp`;
+
+        const galleryItem = document.createElement('div');
+        galleryItem.classList.add('gallery-item');
+
+        const thumbnailLink = document.createElement('a');
+        thumbnailLink.href = originalSrc;
+        thumbnailLink.setAttribute('data-lightbox', 'gallery');
+
+        const thumbnailImg = document.createElement('img');
+        thumbnailImg.src = thumbnailSrc;
+        thumbnailImg.alt = `Bild ${i}`;
+
+        thumbnailLink.appendChild(thumbnailImg);
+        galleryItem.appendChild(thumbnailLink);
+
+        galleryContainer.appendChild(galleryItem);
+      }
+    });
+  </script>
 
