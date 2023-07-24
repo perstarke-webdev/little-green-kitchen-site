@@ -77,6 +77,20 @@ permalink: "/galerie/"
         height: 150px; /* Kleineres Quadrat in der Vorschau */
       }
     }
+
+    @media screen and (max-width: 470px) {
+      /* Reduziere die Anzahl der Spalten in der mobilen Ansicht */
+      .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Kleineres Quadrat in der Vorschau */
+        gap: 5px; /* Abstand zwischen den Zeilen und den Spalten in der mobilen Ansicht */
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
+      }
+      .gallery-item {
+        width: 100px; /* Kleineres Quadrat in der Vorschau */
+        height: 100px; /* Kleineres Quadrat in der Vorschau */
+      }
+    }
   </style>
 
 <script>
