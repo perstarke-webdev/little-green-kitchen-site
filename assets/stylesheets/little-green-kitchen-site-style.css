@@ -160,6 +160,11 @@ img.max200 {
     max-width:200px;
 }
 
+.max420 {
+    width:100%;
+    max-width:420px;
+}
+
 img.maxHeight500 {
   max-height: 500px;
   width: 100%;
