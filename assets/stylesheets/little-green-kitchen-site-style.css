@@ -1,13 +1,14 @@
 .colored-box {
     padding: 8px;
     border-radius: 3px;
-    background-color: #99d0a4;
+    color: #F5F5F5;
+    background-color: #568d55;
 }
 
 .colored-border-box {
     padding: 8px;
     border-radius: 3px;
-    border: 2px solid #99d0a4;
+    border: 2px solid #568d55;
 }
 
 .padding-box {
@@ -22,7 +23,7 @@
 }
 
 footer.footer {
-    background-color: WhiteSmoke;
+    background-color: #f7e8e1;
 }
 
 .bold {
@@ -30,7 +31,7 @@ footer.footer {
 }
 
 hr.sep {
-    border-top: 2px solid WhiteSmoke;
+    border-top: 2px solid #f7e8e1;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -77,9 +78,9 @@ h3 {
 }
 
 .rezension-box {
-    border: 2px solid #d9f6de;
+    border: 2px solid #568d55; /* Grüne Umrandung */
     border-radius: 3px;
-    background-color: WhiteSmoke;
+    background-color: #f7e8e1; /* Leichtes Rosa */
 }
 
 .rezension-text {
@@ -99,7 +100,7 @@ p.aktuell-datum {
 }
 
 hr.rezension-sep {
-    border-top: 2px solid #008a1c;
+    border-top: 2px solid #568d55;
     margin-top: 15px;
     margin-bottom: 30px;
     margin-left: 20px;
@@ -109,21 +110,23 @@ hr.rezension-sep {
 .btn-custom {
   display: inline-block;
   font-weight: 400;
-  color: #fff;
+  color: #F5F5F5;
   text-align: center;
   vertical-align: middle;
-  background-color: #008a1c; /* Akzentfarbe */
-  border: 1px solid #006634; /* Dunklere Umrandung */
+  background-color: #568d55;
+  border: 1px solid #4b7f49;
   border-radius: 5px;
   padding: 8px 16px;
   font-size: 14px;
   line-height: 1.5;
-  transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out;
 }
 
 .btn-custom:hover {
-  background-color: #006c34; /* Dunklerer Grünton beim Hover */
+  background-color: #4b7f49;
+  border-color: #3f723e;
 }
+
 
 .btn-link {
   display: inline-block;
@@ -132,7 +135,7 @@ hr.rezension-sep {
 .map-container {
     position: relative;
     overflow: hidden;
-    padding-top: 56.25%; /* Hier kannst du das Seitenverhältnis der Karte einstellen (Höhe/Breite * 100) */
+    padding-top: 56.25%;
 }
 
 .map-container iframe {
@@ -156,3 +159,85 @@ img.max200 {
     width:100%;
     max-width:200px;
 }
+
+
+
+/* Gallery */
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px; /* Standard-Abstand zwischen den Bildern */
+    }
+
+    .gallery-item {
+      width: 200px; /* Quadratische Breite */
+      height: 200px; /* Quadratische Höhe */
+      overflow: hidden;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    .pagination {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .pagination button {
+      margin: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      border: none;
+      background-color: #f7e8e1;
+      transition: background-color 0.3s ease;
+    }
+
+    .pagination button:hover {
+      background-color: #4b7f49;
+    }
+
+    .pagination button.active {
+      background-color: #568d55;
+      color: #f2f2f2;
+    }
+
+    .pagination button.active:hover {
+      background-color: #568b64;
+    }
+
+
+    @media screen and (max-width: 650px) {
+      /* Reduziere die Anzahl der Spalten in der mobilen Ansicht */
+      .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Kleineres Quadrat in der Vorschau */
+        gap: 5px; /* Abstand zwischen den Zeilen und den Spalten in der mobilen Ansicht */
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
+      }
+      .gallery-item {
+        width: 150px; /* Kleineres Quadrat in der Vorschau */
+        height: 150px; /* Kleineres Quadrat in der Vorschau */
+      }
+    }
+
+    @media screen and (max-width: 470px) {
+      /* Reduziere die Anzahl der Spalten in der mobilen Ansicht */
+      .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Kleineres Quadrat in der Vorschau */
+        gap: 5px; /* Abstand zwischen den Zeilen und den Spalten in der mobilen Ansicht */
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
+      }
+      .gallery-item {
+        width: 100px; /* Kleineres Quadrat in der Vorschau */
+        height: 100px; /* Kleineres Quadrat in der Vorschau */
+      }
+    }
