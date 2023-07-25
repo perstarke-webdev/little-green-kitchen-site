@@ -160,6 +160,15 @@ img.max200 {
     max-width:200px;
 }
 
+img.maxHeight500 {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover; /* Das Bild wird nicht verzerrt, abgeschnitten und passt in den Container */
+}
+
+
+
+
 
 
 /* Gallery */
