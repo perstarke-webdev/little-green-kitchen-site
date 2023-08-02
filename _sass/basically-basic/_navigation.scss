@@ -4,6 +4,7 @@
 
 .menu {
   @include list-unstyled;
+  font-family: "Fira Sans";
 
   a {
     color: inherit;
