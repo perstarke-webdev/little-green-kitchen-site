@@ -1,15 +1,14 @@
 .colored-box {
-    padding: 8px;
     border-radius: 3px;
     color: #F5F5F5;
     background-color: #568d55;
 }
 
 .colored-border-box {
-    padding: 8px;
     border-radius: 3px;
     border: 2px solid #568d55;
 }
+
 
 .padding-box {
     padding: 15px;
@@ -255,3 +254,33 @@ img.maxHeight500 {
         height: 100px; /* Kleineres Quadrat in der Vorschau */
       }
     }
+
+
+
+
+
+/* Startseiten-Boxen */
+
+.start-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.flex-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Anpassung der Ausrichtung auf vertikal */
+  justify-content: center;
+  padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Media Query für Bildschirmbreiten bis 768px (Tablets und Smartphones) */
+  .start-container {
+    flex-direction: column; /* Anpassung der Ausrichtung auf vertikal */
+  }
+}
+
+
