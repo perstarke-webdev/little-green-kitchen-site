@@ -50,9 +50,11 @@ google_fonts:
 
 navigation_pages:
   - index.html
+  - index2.html
+  - index3.html
+  - index4.html
   - 01_menue.html
   - 02_catering.html
   - 03_galerie.html
   - 04_kontakt_anfahrt.html
-  - index2.html
 
