@@ -259,7 +259,7 @@ img.maxHeight500 {
 
 
 
-/* Startseiten-Boxen */
+/* Startseite */
 
 .start-container {
   display: flex;
@@ -276,11 +276,25 @@ img.maxHeight500 {
   padding: 15px;
 }
 
+.index-noboxes {
+    text-align:center;
+    padding:0 10vw 0 10vw;
+}
+
 @media screen and (max-width: 768px) {
   /* Media Query für Bildschirmbreiten bis 768px (Tablets und Smartphones) */
   .start-container {
     flex-direction: column; /* Anpassung der Ausrichtung auf vertikal */
   }
+
+  .index-noboxes {
+    padding: 0 3vw 0 3vw;
+  }
 }
+
+
+
+
+
 
 
