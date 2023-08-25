@@ -50,10 +50,6 @@ google_fonts:
 
 navigation_pages:
   - index.html
-  - index2.html
-  - index3.html
-  - index4.html
-  - index5.html
   - 01_menue.html
   - 02_catering.html
   - 03_galerie.html
