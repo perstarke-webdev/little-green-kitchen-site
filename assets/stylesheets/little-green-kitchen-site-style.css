@@ -297,4 +297,20 @@ img.maxHeight500 {
 
 
 
+.image-container-startlogo {
+    text-align: center;
+}
+
+.image-container-startlogo img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .image-container-startlogo img {
+        width: 80%;
+    }
+}
+
 
