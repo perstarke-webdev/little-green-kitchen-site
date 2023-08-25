@@ -4,6 +4,17 @@
     background-color: #568d55;
 }
 
+.colored-pencil-box {
+    border-radius: 3px;
+    color: #F5F5F5;
+    background-image: url('/images/green-pencil-texture.png');
+    background-size: cover;
+}
+
+
+
+
+
 .colored-border-box {
     border-radius: 3px;
     border: 2px solid #568d55;
