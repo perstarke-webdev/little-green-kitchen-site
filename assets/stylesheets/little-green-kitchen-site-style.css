@@ -325,3 +325,54 @@ img.maxHeight500 {
 }
 
 
+
+
+
+
+
+
+.container_wagen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust spacing between boxes */
+}
+
+.wagen-box {
+    flex-basis: calc(50% - 10px); /* Each box takes half of the available space minus spacing */
+    border: 2px solid #568d55;
+    background-color: #f7e8e1;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.wagen-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+img.max {
+    width: 100%;
+    max-width: 40vw;
+}
+
+@media (min-width: 1000px) {
+    img.max {
+        max-width: 400px;
+    }
+}
+
+
+@media (max-width: 700px) {
+  .wagen-box {
+    flex-basis: 100%; /* Each box takes full width on smaller screens */
+  }
+}
+
+.wagen {
+    transition: transform 0.3s;
+}
+
+.wagen:hover {
+    transform: scale(1.05);
+}
