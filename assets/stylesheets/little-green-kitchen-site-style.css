@@ -334,7 +334,11 @@ img.maxHeight500 {
 .container_wagen {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Adjust spacing between boxes */
+  gap: 20px;
+}
+
+.pos-box {
+    flex-basis: calc(50% - 10px);
 }
 
 .wagen-box {
@@ -364,7 +368,7 @@ img.max {
 
 
 @media (max-width: 700px) {
-  .wagen-box {
+  .wagen-box, .pos-box {
     flex-basis: 100%; /* Each box takes full width on smaller screens */
   }
 }
