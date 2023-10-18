@@ -44,6 +44,16 @@ Diese Seite verwendet kein Tracking, um Zugriffszahlen zu ermitteln, und wir sel
 Allerdings kann durch die Einbindung von Google Maps seitens Google auf die Verwendung von Cookies zurückgegriffen werden.  
 Mehr Informationen gibt es in der [Datenschutzerklärung von Google](https://policies.google.com/privacy?hl=de%22).
 
+#### GitHub Pages und CDN-Nutzung:
+
+Diese Website wird über [GitHub Pages](https://pages.github.com/) bereitgestellt, einem von GitHub, Inc. angebotenen Dienst, der es ermöglicht, Webseiteninhalte effizient und schnell weltweit zu verteilen. Die Verwendung von GitHub Pages integriert automatisch ein Content Delivery Network (CDN), um die Ladezeiten der Website zu optimieren und die Verfügbarkeit von Inhalten sicherzustellen.
+
+Durch die Nutzung dieser Website erklären Sie sich damit einverstanden, dass einige Ihrer nicht-persönlichen Daten, wie die IP-Adresse und Informationen zur Seitennutzung, über das CDN übertragen werden können, um eine optimale Leistung der Website zu gewährleisten. Diese Datenübertragung erfolgt in Übereinstimmung mit den geltenden Datenschutzbestimmungen.
+
+Wir respektieren Ihre Privatsphäre und ergreifen angemessene Maßnahmen, um Ihre persönlichen Informationen zu schützen. Bitte beachten Sie unsere Datenschutzerklärung für weitere Informationen darüber, wie wir mit Ihren Daten umgehen.
+
+Bei Fragen oder Anliegen zur Verwendung von GitHub Pages und des CDNs auf dieser Website können Sie sich gerne an uns wenden.
+
 
 #### Haftung für Links
 Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
@@ -63,6 +73,8 @@ erlaubt die Darstellung diverser Icon-Symbole auf unseren Seiten.
 FontAwesome nutzt anonyme Zugriffsdaten, die in deren
 [privacy policy](https://fontawesome.com/privacy) spezifiziert sind.
 <br/>
+
+Auf dieser Seite wird FontAwesome allerdings lokal gehostet, somit werden keine Zugriffsdaten von FontAwesome genutzt oder an FontAwesome weitergegeben.
 
 #### Widerruf, Änderungen, Berichtigungen und Aktualisierungen
 Der Nutzer hat das Recht, auf Antrag unentgeltlich Auskunft zu erhalten über die personenbezogenen Daten, die über ihn gespeichert wurden. Zusätzlich hat der Nutzer das Recht auf Berichtigung unrichtiger Daten, Sperrung und Löschung seiner personenbezogenen Daten, soweit dem keine gesetzliche Aufbewahrungspflicht entgegensteht.<br />
