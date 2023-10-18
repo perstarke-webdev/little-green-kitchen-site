@@ -12,6 +12,46 @@
 
     {% include skip-links.html %}
 
+    <div id="cookie-banner">
+      Diese Website verwendet Google Maps, einen Dienst von Google LLC, um interaktive Karten anzuzeigen.
+      Dieser Dienst verwendet Cookies (technisch notwendige Cookies, Analyse-Cookies und Marketing-Cookies).
+      Mehr Infos findest du in der
+      <a href="https://policies.google.com/privacy?hl=de"
+         target="_blank" rel="noopener noreferrer nofollow">
+        Datenschutzerklärung von Google.</a><br><br>
+      Diese Website wird über GitHub Pages zur Verfügung gestellt, das heißt, sie verwendet ein globales Verteilernetzwerk (CDN), um Inhalte zuverlässig anzuzeigen. Wenn du die Website nutzt, können einige deiner nicht-persönlichen Daten, wie beispielsweise die IP-Adresse und Informationen zur Seitennutzung, über dieses Netzwerk übertragen werden, um eine einwandfreie Funktion der Website zu gewährleisten.
+      Mehr Infos findest du im
+      <a href="/imprint#github-pages-und-cdn-nutzung"
+         target="_blank" rel="noopener noreferrer nofollow">
+        Impressum & Datenschutz</a><br><br>
+
+      Bitte bestätige, dass du damit einverstanden bist, sowie damit, dass wir ein Zustimmungs-Cookie verwenden, das für einen Zeitraum von einem Tag gespeichert wird. Dieses Cookie ermöglicht es uns, deine Zustimmung zur Verwendung von nicht-persönlichen Daten und zur einwandfreien Funktion der Website zu speichern.<br><br>
+      <button class="btn-custom" id="cookie-consent-btn">Einverstanden</button>
+    </div>
+
+    <!-- JavaScript-Code für den Cookie Consent-Banner -->
+    <script>
+    // Überprüfe, ob das Cookie für die Zustimmung gesetzt ist
+    if (document.cookie.indexOf('cookieConsent=1') !== -1) {
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+  // Funktion zum Ausblenden des Banners und Setzen des Zustimmungs-Cookies für einen Tag
+  function setCookieConsent() {
+      document.getElementById('cookie-banner').style.display = 'none';
+
+      // Erstelle ein Date-Objekt für das Ablaufdatum (einen Tag ab dem aktuellen Datum)
+      var expiresDate = new Date();
+      expiresDate.setDate(expiresDate.getDate() + 1);
+
+      // Setze ein Cookie, um die Zustimmung des Benutzers für einen Tag zu speichern
+      document.cookie = 'cookieConsent=1; expires=' + expiresDate.toUTCString() + '; path=/';
+  }
+
+    // Event Listener für den Einverstanden-Button
+    document.getElementById('cookie-consent-btn').addEventListener('click', setCookieConsent);
+</script>
+
     <div class="sidebar-toggle-wrapper">
       {% if site.search %}
         <button class="search-toggle" type="button">
