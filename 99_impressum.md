@@ -54,6 +54,18 @@ Wir respektieren Ihre Privatsphäre und ergreifen angemessene Maßnahmen, um Ihr
 
 Bei Fragen oder Anliegen zur Verwendung von GitHub Pages und des CDNs auf dieser Website können Sie sich gerne an uns wenden.
 
+#### Kontaktaufnahme
+Bei der Kontaktaufnahme mit dem Anbieter (zum Beispiel per Kontaktformular oder E-Mail) werden die Angaben des Nutzers zwecks Bearbeitung der Anfrage sowie für den Fall, dass Anschlussfragen entstehen, gespeichert.
+
+#### Kommentare und Beiträge
+Diese Site enthält keine Kommentarfunktion, Nutzer können daher keine Beiträge hinterlassen.
+
+#### Analyse, Tracking und Cookies
+Diese Seite verwendet kein Tracking, um Zugriffszahlen zu ermitteln.
+Es wird ein Cookie für die Dauer von einem Tag gesetzt, um die Zustimmung zur Verwendung der Website zu speichern, davon abgesehen setzen wir selber keine Cookies.
+Allerdings kann durch die Einbindung von Google Maps seitens Google auf die Verwendung von Cookies zurückgegriffen werden.  
+Mehr Informationen gibt es in der [Datenschutzerklärung von Google](https://policies.google.com/privacy?hl=de%22).
+
 
 #### Haftung für Links
 Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
@@ -72,9 +84,9 @@ erlaubt die Darstellung diverser Icon-Symbole auf unseren Seiten.
 
 FontAwesome nutzt anonyme Zugriffsdaten, die in deren
 [privacy policy](https://fontawesome.com/privacy) spezifiziert sind.
-<br/>
 
-Auf dieser Seite wird FontAwesome allerdings lokal gehostet, somit werden keine Zugriffsdaten von FontAwesome genutzt oder an FontAwesome weitergegeben.
+Auf dieser Webseite wird FontAwesome allerdings lokal gehostet und somit keine Daten an FontAwesome weitergegeben.
+<br/>
 
 #### Widerruf, Änderungen, Berichtigungen und Aktualisierungen
 Der Nutzer hat das Recht, auf Antrag unentgeltlich Auskunft zu erhalten über die personenbezogenen Daten, die über ihn gespeichert wurden. Zusätzlich hat der Nutzer das Recht auf Berichtigung unrichtiger Daten, Sperrung und Löschung seiner personenbezogenen Daten, soweit dem keine gesetzliche Aufbewahrungspflicht entgegensteht.<br />
@@ -82,4 +94,3 @@ Der Nutzer hat das Recht, auf Antrag unentgeltlich Auskunft zu erhalten über di
 #### Quelle
 Danke an Hr Rechtsanwalt Thomas Schwenke:<br>
 <a href="http://rechtsanwalt-schwenke.de/smmr-buch/datenschutz-muster-generator-fuer-webseiten-blogs-und-social-media/"><strong>Datenschutz-Muster von Rechtsanwalt Thomas Schwenke - I LAW it</strong></a>
-
