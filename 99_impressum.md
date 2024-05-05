@@ -13,7 +13,7 @@ Johanna Fatou Roxlau, Köln, DE
 Telefon: +49 176 76861049
 <br>
 e-Mail: hey_at_littlegreenkitchen.de   
-St-Nr.: DE342191134
+USt-ID: DE342191134
 <br>
 
 
