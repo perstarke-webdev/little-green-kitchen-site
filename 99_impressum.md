@@ -6,14 +6,14 @@ permalink: "/imprint/"
 
 
 #### Anbieter und Verantwortliche Person
-Johanna Fatou Roxlau, Köln, DE
+Johanna Fatou Roxlau, Köln, DE   
+USt-ID: DE342191134
 
 
 #### Kontakt
 Telefon: +49 176 76861049
 <br>
-e-Mail: hey_at_littlegreenkitchen.de   
-USt-ID: DE342191134
+e-Mail: hey_at_littlegreenkitchen.de
 <br>
 
 
